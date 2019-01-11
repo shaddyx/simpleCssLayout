@@ -1,0 +1,85 @@
+@import "../sass-import-once";
+@import "../props";
+@include exports('aligns') {
+  //
+  //  aligns child elements in main axis
+  //
+  .alignStartC {
+    @include justifyContent(stretch);
+  }
+
+  .alignCenterC {
+    @include justifyContent(center);
+  }
+
+  .alignEndC {
+    @include justifyContent(flex-end);
+  }
+  //
+  //  aligns child elements in secondary axis
+  //
+  .alignSecondaryStartC {
+    @include alignItems(flex-start !important);
+  }
+
+  .alignSecondaryCenterC {
+    @include alignItems(center !important);
+  }
+
+  .alignSecondaryEndC {
+    @include alignItems(flex-end !important);
+  }
+
+  .horzContainer.hAlignStartC {
+    @include justifyContent(flex-start);
+  }
+
+  .horzContainer.hAlignCenterC {
+    @include justifyContent(center);
+  }
+
+  .horzContainer.hAlignEndC {
+    @include justifyContent(flex-end);
+  }
+
+  .horzContainer.vAlignStartC {
+    @include alignItems(flex-start !important);
+  }
+
+  .horzContainer.vAlignCenterC {
+    @include alignItems(center !important);
+  }
+
+  .horzContainer.vAlignEndC {
+    @include alignItems(flex-end !important);
+  }
+
+  .vertContainer.vAlignStartC {
+    @include justifyContent(flex-start);
+  }
+
+  .vertContainer.vAlignCenterC {
+    @include justifyContent(center);
+  }
+
+  .vertContainer.vAlignEndC {
+    @include justifyContent(flex-end);
+  }
+
+  .vertContainer.hAlignStartC {
+    @include alignItems(flex-start);
+  }
+
+  .vertContainer.hAlignCenterC {
+    @include alignItems(center !important);
+  }
+
+  .vertContainer.hAlignEndC {
+    @include alignItems(flex-end !important);
+  }
+
+  .alignCenterC {
+    @include alignItems(center !important);
+    @include justifyContent(center !important);
+  }
+}
